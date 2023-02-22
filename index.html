@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,66 +10,106 @@
     <meta name="keywords" content="小兔鲜儿,食品,生鲜,服装,家电,电商,购物">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/base.css">
-    <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/index.css">
 </head>
+
 <body>
-       <!-- 顶部导航栏 -->
-     <header class="container ">
-        <ul>
-            <li><a href="#">请先登录</a></li>
-            <li><a href="#">免费注册</a></li>
-            <li><a href="#">我的订单</a></li>
-            <li><a href="#">会员中心</a></li>
-            <li><a href="#">帮助中心</a></li>
-            <li><a href="#">在线客服</a></li>
-            <li><a href="#">手机版</a></li>
-        </ul>
-          
-        
-        </header>
-    <div class="container">
- 
-       
-        <!-- 标记导航栏 -->
-        <nav></nav>
-        <!-- 页面主体 -->
-        <main>
+    <!-- 顶部导航栏 -->
+    <header>
+        <div class="container">
+            <ul>
+                <li><a href="#">请先登录</a>|</li>
+                <li><a href="#">免费注册</a>|</li>
+                <li><a href="#">我的订单</a>|</li>
+                <li><a href="#">会员中心</a>|</li>
+                <li><a href="#">帮助中心</a>|</li>
+                <li><a href="#">在线客服</a>|</li>
+                <li><a href="#">手机版</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- 标记导航栏 -->
+    <nav>
+        <div class="container">
+            <!-- logo -->
+            <h1 class="logo fl">
+                <a href="#">小兔鲜</a>
+            </h1>
+
+            <!-- 导航 -->
+            <div class="fl navcar">
+                <ul>
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">生鲜</a></li>
+                    <li><a href="#">美食</a></li>
+                    <li><a href="#">餐厨</a></li>
+                    <li><a href="#">电器</a></li>
+                    <li><a href="#">居家</a></li>
+                    <li><a href="#">洗护</a></li>
+                    <li><a href="#">孕婴</a></li>
+                    <li><a href="#">服装</a></li>
+                </ul>
+            </div>
+
+            <!-- 搜索 -->
+            <div class="search fl">
+                <input type="search" placeholder="搜一搜">
+            </div>
+
+            <!-- 购物车 -->
+            <div class="cart fl">
+                <span>2</span>
+            </div>
+        </div>
+    </nav>
+    <!-- 页面主体 -->
+    <main>
+        <div class="container">
             <!-- 商品导航 -->
             <div></div>
             <!-- 商品展示 -->
             <div></div>
-        </main>
-       
-</div>
- <!-- 页脚 -->
-        <footer></footer>
-</body>
-    <style>
-        header {
-        width:100%;
-        height: 52px;
-        background-color: #333;
-        
-        line-height: 52px;
-        }
-        header ul{
-            line-height: 52px;
-            margin-left: 300px;
-            background-color: antiquewhite;
-            border: 1px solid red;
-        }
-        head ul li{
-            height: 52px;
-            border-right: 1px solid #fff;
-        }
+        </div>
 
-        header ul li a{
-            margin: 0 16px;
-            float: left;
-            font-size: 14px;
-            color: #fff;
-            
-        }
-    </style>
+    </main>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="service">
+            <div class="container">
+                <a href="#">价格亲民</a>
+                <a href="#">物流快捷</a>
+                <a href="#">品质新鲜</a>
+            </div>
+        </div>
+
+        <!-- 版权信息 -->
+        <div class="copyright">
+            <div class="container">
+                <p>
+                    <a href="#">关于我们</a> |
+                    <a href="#">帮助中心</a> |
+                    <a href="#">售后服务</a> |
+                    <a href="#">配送与验收</a> |
+                    <a href="#">商务合作</a> |
+                    <a href="#">搜索推荐</a> |
+                    <a href="#">友情链接</a>
+                </p>
+                <p>CopyRight @ 小兔鲜儿</p>
+            </div>
+        </div>
+    </footer>
+</body>
+<style>
+    .container {
+        width: 1240px;
+        margin: 0 auto;
+    }
+    main{
+        height: 500px;
+    background-color: #f5f5f5;
+    }
+</style>
+
 </html>
