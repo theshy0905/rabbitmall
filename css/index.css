@@ -93,7 +93,7 @@ header ul li:last-child a::before {
     content: '';
     position: absolute;
     top: 5px;
-    left: 2px;
+    left: 5px;
     width: 18px;
     height: 18px;
     background: url('../images/sprites.png') -80px -70px;
@@ -102,10 +102,25 @@ header ul li:last-child a::before {
   nav .search input {
     width: 172px;
     height: 30px;
-    border-bottom: 2px solid #e7e7e7;
-    padding-left: 31px;
+    border: 1px solid #dadada;
+    padding: 10px;
+    padding-left: 28px;
+    border-radius: 5px;
+    transition: .3s;
   }
   
+  .search input::placeholder {
+    color: #27ba9b;
+  }
+  
+  .search input:focus {
+    border: 1px solid #9adacc;
+    box-shadow: 0 0 0 5px #91dfce
+  }
+
+
+
+
   nav .cart {
     position: relative;
     width: 23px;
