@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>小兔鲜儿-新鲜、惠民、快捷！</title>
@@ -67,38 +68,42 @@
     <main>
         <div class="container">
             <div class="leftcar">
-
+                <ul>
+                    <li><a href="#">生鲜 <span>水果</span> <span>蔬菜</span></a></li>
+                    <li><a href="#">美食 <span>面点</span> <span>干果</span></a></li>
+                    <li><a href="#">餐厨 <span>数码产品</span></a></li>
+                    <li><a href="#">电器 <span>床品</span> <span>四件套</span> <span>被枕</span></a></li>
+                    <li><a href="#">居家 <span>奶粉</span> <span>玩具</span> <span>辅食</span></a></li>
+                    <li><a href="#">洗护 <span>洗发</span> <span>洗护</span> <span>美妆</span></a></li>
+                    <li><a href="#">孕婴 <span>奶粉</span> <span>玩具</span></a></li>
+                    <li><a href="#">服饰 <span>女装</span> <span>男装</span></a></li>
+                    <li><a href="#">杂货 <span>户外</span> <span>图书</span></a></li>
+                    <li><a href="#">品牌 <span>品牌制造</span></a></li>
+                </ul>
             </div>
             <section id="slideshow">
+
                 <div class="entire-content">
                     <div class="content-carrousel">
-                        <figure class="shadow"><img
-                                src="https://images.pexels.com/photos/758733/pexels-photo-758733.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" />
+                        <figure class="shadow"><img src="images/QQ图片20230219155404.jpg" />
                         </figure>
-                        <figure class="shadow"><img
-                                src="https://images.pexels.com/photos/21261/pexels-photo.jpg?w=940&h=650&auto=compress&cs=tinysrgb" />
+                        <figure class="shadow"><img src="images/QQ图片20230219155411.jpg" />
                         </figure>
-                        <figure class="shadow"><img
-                                src="https://images.pexels.com/photos/567973/pexels-photo-567973.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" />
+                        <figure class="shadow"><img src="images/QQ图片20230219155422.jpg" />
                         </figure>
-                        <figure class="shadow"><img
-                                src="https://images.pexels.com/photos/776653/pexels-photo-776653.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" />
+                        <figure class="shadow"><img src="images/QQ图片20230219155425.jpg" />
                         </figure>
-                        <figure class="shadow"><img
-                                src="https://images.pexels.com/photos/54630/japanese-cherry-trees-flowers-spring-japanese-flowering-cherry-54630.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" />
+                        <figure class="shadow"><img src="images/QQ图片20230219155404.jpg" />
                         </figure>
-                        <figure class="shadow"><img
-                                src="https://images.pexels.com/photos/131046/pexels-photo-131046.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" />
+                        <figure class="shadow"><img src="images/QQ图片20230219155411.jpg" />
                         </figure>
-                        <figure class="shadow"><img
-                                src="https://images.pexels.com/photos/302515/pexels-photo-302515.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" />
+                        <figure class="shadow"><img src="images/QQ图片20230219155422.jpg" />
                         </figure>
-                        <figure class="shadow"><img
-                                src="https://images.pexels.com/photos/301682/pexels-photo-301682.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" />
+                        <figure class="shadow"><img src="images/QQ图片20230219155425.jpg" />
                         </figure>
-                        <figure class="shadow"><img
-                                src="https://images.pexels.com/photos/933054/pexels-photo-933054.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" />
+                        <figure class="shadow"><img src="images/QQ图片20230219155435.jpg    " />
                         </figure>
+
                     </div>
                 </div>
             </section>
@@ -141,10 +146,48 @@
         height: 500px;
         background-color: #f5f5f5;
     }
-    .leftcar{
-        width: 200px;
-        height: 100%;
-        background-color: red;
+    .leftcar {
+        /* 子绝父相 */
+        position: absolute;
+      
+        width: 251px;
+        height: 500px;
+        background-color: rgba(0, 0, 0, .8);
+    }
+
+    .leftcar a {
+        color: #fff;
+    }
+
+    .leftcar li {
+        position: relative;
+        height: 50px;
+        padding-left: 36px;
+        line-height: 50px;
+    }
+
+    .leftcar li:hover {
+        background-color: #27ba9b;
+    }
+
+    .leftcar span {
+        font-size: 14px;
+    }
+
+    .leftcar span:first-child {
+        margin-left: 15px;
+    }
+
+    .leftcar a::after {
+        content: '';
+        position: absolute;
+        top: 19px;
+        right: 19px;
+        width: 6px;
+        height: 11px;
+        /* ps */
+        /* background-color: red; */
+        background: url('../images/sprites.png') -80px -110px;
     }
 </style>
 
